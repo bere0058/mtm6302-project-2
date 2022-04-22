@@ -1,0 +1,67 @@
+button {
+    width: fit-content;
+}
+/* Article section */
+.vertical-img {
+    height: calc(100vh - 15%);
+}
+.delete {
+    width: fit-content;
+}
+.a-explanation {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Img interaction */
+.img-full {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 15%;
+    transition: .5s;
+}
+.on-img {
+    width: fit-content!important;
+}
+img:hover {
+    cursor: pointer;
+}
+
+/* Favorites section */
+.fav-div {
+    flex-direction: row;
+}
+.f-img-div {
+    padding: 2% 4%;
+}
+
+/* Different Screen sizes */
+@media screen and (max-width: 768px) {
+    article {
+        flex-direction: column;
+    }
+    h1, h2, h3, h4, label, .a-date {
+        text-align: center;
+    }
+    .fav-div{
+        justify-content: space-around;
+    }
+    .fav-div {
+        flex-direction: column;
+    }
+    .f-img-div {
+        width: 100%!important;
+        justify-content: center;
+    }
+    .f-text-div>* {
+        text-align: center;
+        margin: auto;
+    }
+    button, .art-section>*{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
